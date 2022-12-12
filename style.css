@@ -516,7 +516,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 0.5;/*changer l'opacité de zero à 0.5 pour le rendre visible*/
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -653,6 +653,10 @@ a {
     font-weight: 400;
     color: #575757!important;
 }
+ul li, ul li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .container {
     max-width: 1000px;
@@ -702,6 +706,7 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    padding-bottom: 20px;
 }
 
 h2 {
@@ -822,7 +827,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -847,6 +852,13 @@ h4 {
         max-width: 100%
     }
 }
+/*Ajustement du font pour les petits écrans*/
+@media (max-width: 992px) {
+    p, html {
+        font-size: 12px;
+    }
+}
+
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
